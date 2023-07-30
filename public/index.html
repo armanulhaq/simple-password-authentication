@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Password Authentication</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+      h1, h5, form, input {
+        font-family: Poppins;
+      }
+      h1 {
+        font-weight: 600;
+      }
+    </style> 
+    <h1>Simple Password Verification Server using Express.js and Body-Parser in Node.js</h1>
+    <h5>Enter password : "TopSecret" to see it's implementation.</h5>
+
+    <form action="/check" method="POST">
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password" required>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
